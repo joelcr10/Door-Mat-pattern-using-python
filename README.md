@@ -5,3 +5,5 @@
 3. Enter the row and colum
 4. NOTE: The row must be odd and column must be 3 times row
 
+Sample output: https://github.com/joelcr10/Door-Mat-pattern-using-python/blob/main/Sample/1.JPG
+
