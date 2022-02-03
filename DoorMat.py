@@ -1,5 +1,4 @@
 n, m = map(int, input("Enter row and colum: ").split())
-#print(n,m)
 SingleDot = "."
 BinaryDot = ".."
 line = "|"
@@ -15,7 +14,6 @@ for i in range(int(n/2)+1):
     numberOfDash = (m-inc)/2
     starting = numberOfDash+1
     numberOfLine = (2*i)+1
-    #print(numberOfDash)
     string = ""
     for j in range(m):
         if int(n/2)==i:
@@ -31,19 +29,16 @@ for i in range(int(n/2)+1):
             elif j==numberOfDash or j==numberOfDash+inc-1:
                 string = string+SingleDot
             else:
-                #string = string+" "
                 if j == starting:
                     string = string+line
                     starting = starting+3
                 else:
                     string = string+SingleDot
-    #string = string+"\n"
     inc = inc+6
     li.append(string)
 
     print(string)
 
-#print(li[int(n/2)-1])
 
 for i in range(1,int(n/2)+1):
     print(li[int(n/2)-i])
